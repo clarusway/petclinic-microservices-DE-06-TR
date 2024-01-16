@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "petclinic-cluster-staging"
+  cluster:
+    server: "https://rancher-de-tr.clarusway.us/k8s/clusters/c-m-z7jptl8j"
+
+users:
+- name: "petclinic-cluster-staging"
+  user:
+    token: "kubeconfig-user-d4j6sdrw2w:xdj5dsbhznp2tfm5rzgc9zlpb8dkq9lvd56dz82lz2mbf6t88lcmb8"
+
+
+contexts:
+- name: "petclinic-cluster-staging"
+  context:
+    user: "petclinic-cluster-staging"
+    cluster: "petclinic-cluster-staging"
+
+current-context: "petclinic-cluster-staging"
+
